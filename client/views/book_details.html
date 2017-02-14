@@ -1,0 +1,25 @@
+<div class="panel panel-default" ng-init="getBook()">
+	<div class="panel-heading">
+		<h3 class='panel-title'><b>Book <font color='skyblue'>Description</font></b></h3>
+	</div>
+	<div class="panel-body">
+		<div class='row'>
+			<div class="col-md-4">
+				<img ng-src="{{book.image_url}}" class='img img-responsive' />
+			</div>
+			<div class="col-md-8 container-fluid" >
+				<h3 id='bookName'><b>{{book.name}}</b></h3>
+				<br/>
+				<p>{{book.description}}</p>
+				<br/>
+				<ul class="list-group" id='list'>
+					<li class='list-group-item'><span class='pull-left'><b>Title : </b></span><span class='pull-right'>{{book.name}}</span><br/></li>
+					<li class='list-group-item'><span class='pull-left'><b>Genre : </b></span><span class='pull-right'>{{book.genre}}</span><br/></li>
+					<li class='list-group-item'><span class='pull-left'><b>Author :</b> </span><span class='pull-right'>{{book.author}}</span><br/></li>
+				</ul>
+				<br/>
+				<a href="#/books" class='btn '>Go Back</a> &nbsp; <a href="{{book.buy_url}}" class='btn '>Buy this Book</a>
+			</div>
+		</div>
+	</div>
+</div>

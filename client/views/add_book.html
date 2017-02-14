@@ -1,0 +1,82 @@
+<div>
+	<div class='container-fluid' id='box'>
+		<form class='form' ng-submit='addBook()'>
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Title : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<input type='text' ng-model="form.name" placeHolder='Title of the book... dumbhead!' required/><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Author : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.author' placeHolder="Do i need to explain it too..." required/><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Genre : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.genre' placeHolder="Book's theme..." required/"><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Description : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<textarea ng-model='form.description' placeHolder="About the friging book..."></textarea><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Publisher : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.publisher' placeHolder="Who published the book.." required/"><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Pages : </b></label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.pages' placeHolder="Enter number of Pages..." required/"><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Cover Pic :</b> </label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.image_url' placeHolder="Enter the URL of Pic.."><br/>
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col-md-3 labe'>
+					<label><b>Where to buy :</b> </label>
+				</div>
+				<div class='col-md-9'>
+					<input type="text" ng-model='form.buy_url' placeHolder='Enter the URL of the site from which the Book can be purchased..'><br/>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div class='row'>
+				<button type='submit' class='btn'>Submit</button>
+			</div>
+		</form>
+	</div>
+</div>
